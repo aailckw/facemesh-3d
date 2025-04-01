@@ -32,7 +32,7 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -41,7 +41,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: path.join(__dirname, 'dist'),
+    static: path.join(__dirname, 'public'),
     compress: true,
     port: 4001,
   },
